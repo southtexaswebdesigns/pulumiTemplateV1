@@ -1,0 +1,31 @@
+# https://www.pulumi.com/templates/
+# https://www.pulumi.com/docs/concepts/projects/project-file/#pulumi-project-file
+# https://github.com/pulumi/pulumi-cloudflare
+# https://github.com/pulumi/pulumi-github
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+template:
+  description: HTML/CSS/JS static site using 11ty, Cloudflare, and GitHub
+  config:
+    projectName:
+      description: The name of the project
+    websiteDomain:
+      description: The domain to use
+    cloudflareZoneId:
+      description: Cloudflare zone ID to use
+    ghAppInstallationId:
+      description: GitHub App installation ID to use
+    cfAccountId:
+      description: Cloudflare account ID to use
+    cloudflare:apiToken:
+      description: Cloudflare token to use
+      secret: true
+    github:owner:
+      description: GitHub username or organization name
+    github:token:
+      description: GitHub token to use
+      secret: true

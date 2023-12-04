@@ -1,0 +1,12 @@
+{
+    "name": "11tyPages",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18.17.1"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.19.0",
+        "@pulumi/github": "^4.8.1",
+        "@pulumi/cloudflare": "^5.12.0"
+    }
+}
